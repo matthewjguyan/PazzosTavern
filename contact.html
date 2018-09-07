@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<!--
+Name: Matt Guyan
+Date Created: 09/06/2018
+Most recent revision:
+-->
+
+<html lang="en">
+	<head>
+		<title>Pazzo's Tavern | Contact Us</title>
+	</head>
+	<body>
+	<header>
+		<h1>Pazzo's Tavern</h1>
+	</header>
+	<hr />
+	<nav>
+		<table>
+		<tr>
+			<td><a href="index.html">Home</a></td>
+			<td><a href="menu.html">Menu</a></td>
+			<td><a href="contact.html">Contact Us</a></td>
+		</tr>
+		</table>
+	</nav>
+	<hr />
+	<section>
+		<form action="submit.html" method="POST">
+			<label for="name">Name:</label><br />
+			<input type="text" id="name" name="name"><br />
+			<label for="email">Email Address:</label><br />
+			<input type="text" id="email" name="email"><br />
+			<label for="phone">Phone Number:</label><br />
+			<input type="text" id="phone" name="phone"><br />
+			<label for="purpose">Reason for Inquiry:</label><br />
+				<select id="purpose" name="purpose">
+				<option value="catering" selected>Catering</option>
+				<option value="party">Private Party</option>
+				<option value="feedback">Feedback</option>
+				<option value="other">Other</option>
+				</select><br />
+			<label for="info">Additional Information</label><br />
+			<textarea id="info" name="info"></textarea><br />
+			<fieldset>
+			<legend>Have you been to the restaurant?</legend>
+				<input type="radio" id="choice1" name="returning" value="no">
+				<label for="choice1">No</label><br />
+				<input type="radio" id="choice2" name="returning" value="yes">
+				<label for"choice2">Yes</label><br />
+			</fieldset>
+			<fieldset>
+			<legend>Best days to contact you:</legend>
+				<input type="checkbox" id="monday" name="day" value="monday"?
+				<label for="monday">M</label><br />
+				<input type="checkbox" id="tuesday" name="day" value="tuesday"?
+				<label for="tuesday">T</label><br />
+				<input type="checkbox" id="wednesday" name="day" value="wednesday"?
+				<label for="wednesday">W</label><br />
+				<input type="checkbox" id="thursday" name="day" value="thursday"?
+				<label for="thursday">Th</label><br />
+				<input type="checkbox" id="friday" name="day" value="friday"?
+				<label for="friday">F</label><br />
+			</fieldset>
+			<input type="submit" name="submit" value="Send Request">
+				
+	</section>
+	<footer>
+		<hr />
+		<p>300 Calder Way, State College, PA 16801
+		<br />
+		Phone: 747-3275</p>
+	</footer>
+	</body>
+</html>
