@@ -3,18 +3,41 @@
 <!--
 Name: Matt Guyan
 Date Created: 09/06/2018
-Most recent revision:
+Most recent revision:09/10/2018
 -->
 
 <html lang="en">
 	<head>
 		<title>Pazzo's Tavern | Menu</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<style>
+			section {
+				background-color: #d2b48c;
+			}
+			
+			.food th {
+				font-size: 1.2em;
+			}
+
+			.beverages td {
+				width: 60%;
+				text-align: right;
+			}
+			
+			.beverages tr:nth-child(odd) {
+				background-color: #f0e68c;
+			}
+			
+			.beverages tr:nth-child(even) {
+				background-color: #f2f2f2;
+			}
+		</style>
 	</head>
 	<body>
 	<header>
 		<h1>Pazzo's Tavern</h1>
 	</header>
-	<hr />
 	<nav>
 		<table>
 		<tr>
@@ -24,9 +47,12 @@ Most recent revision:
 		</tr>
 		</table>
 	</nav>
-	<hr />
 	<section>
-		<table>
+	<br />
+		<table class="food" id="food" style="margin-left:auto; margin-right: auto;">
+		<tr>
+			<th colspan="3" style="text-align:center; font-size:1.5em">Food</th>
+		</tr>
 		<tr>
 			<th>Burger and Fries</th>
 			<th>A dozen wings</th>
@@ -48,9 +74,33 @@ Most recent revision:
 			<td>A taste of Texas!<br />Smoked brisket on thick-cut Texas toast<br />Served with coleslaw and<br />our famous thick cut french fries<br />$7.95</td>
 		</tr>
 		</table>
+		<div class="clear-float"></div>
+		<br />
+		<table class="beverages" id="beverages" style="margin-left:auto; margin-right:auto;"
+		<tr>
+			<th colspan="2" style="text-align:center; font-size: 1.5em">Beverages</th>
+		</tr>
+		<tr>
+			<th>Root Beer</td>
+			<td>$3.00</td>
+		</tr>
+		<tr>
+			<th>Bottled Water</td>
+			<td>$1.25</td>
+		</tr>
+		<tr>
+			<th>Lemonade</td>
+			<td>$1.00</td>
+		</tr>
+		<tr>
+			<th>Iced Tea</td>
+			<td>$1.25</td>
+		</tr>
+		</table>
+		<div class="clear-float"></div>
+		<br />
 	</section>
 	<footer>
-		<hr />
 		<p>300 Calder Way, State College, PA 16801
 		<br />
 		Phone: 747-3275</p>
