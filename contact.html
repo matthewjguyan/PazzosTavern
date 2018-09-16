@@ -35,7 +35,10 @@
          }
       </style>
    </head>
-   <body>
+   <!-- JavaScript check -->
+   <body onload="document.getElementById('nojs').innerHTML = ''">
+	  <!-- Message displayed if JavaScript is not enabled -->
+	  <div id="nojs" style="background-color:red">This site is best viewed with JavaScript enabled</div>
       <header>
          <h1>Pazzo's Tavern</h1>
 		 <!-- JQuery to provide functionality to carousel -->

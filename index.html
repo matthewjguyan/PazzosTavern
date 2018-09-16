@@ -16,7 +16,10 @@
       <!-- Custom made stylesheet -->
 	  <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
    </head>
-   <body>
+   <!-- JavaScript check -->
+   <body onload="document.getElementById('nojs').innerHTML = ''">
+	  <!-- Message displayed if JavaScript is not enabled -->
+	  <div id="nojs" style="background-color:red">This site is best viewed with JavaScript enabled</div>
       <!-- Minified JQuery -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <!-- Minified JavaScript Bootstrap -->
